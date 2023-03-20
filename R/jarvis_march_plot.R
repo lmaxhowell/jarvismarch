@@ -72,6 +72,5 @@ jarvis_march_plot <- function(point){
     g <- g + geom_segment(x = df[j,1], y = df[j,2], xend = df[j,3], yend = df[j,4], colour = "red")
   }
   g <- g + geom_segment(x = df[(dim(df)[1]),3], y = df[(dim(df)[1]),4], xend = df[1,1], yend = df[1,2], colour = "red")
-  print(g)
   return(g)
 }
